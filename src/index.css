@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Urbanist', 'Arial, sans-serif';
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.ff_roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ff_dm_sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.ff_urbanist {
+  font-family: 'Urbanist', sans-serif;
+}
+.rdrDateRangePickerWrapper{
+  position: absolute;
+  right: 0;
+  z-index: 50;
+  background-color: white;
+}
+.rdrDefinedRangesWrapper{
+  display: none;
+}
