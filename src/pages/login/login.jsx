@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HeaderLogo, LogoImage } from "../../assets/images";
 // import { LoginPage, Logo } from "../../assets/images";
 
 export default function Login() {
@@ -68,45 +69,45 @@ export default function Login() {
 
     return (
         <div className="grid md:grid-cols-2 items-center  h-full overflow-hidden ">
-            {/* <div className="relative order-1 min-h-150 md:min-h-screen">
+            <div className="relative order-1 min-h-150 md:min-h-screen">
                 <img
-                    src={LoginPage}
+                    src={LogoImage}
                     alt="login-image"
                     className="w-full h-auto rounded-xl"
-                    width={808}
-                    height={880}
+                    width={870}
+                    height={860}
                     fetchpriority="high"
                     loading="eager"
                 />
-            </div> */}
+            </div>
             <div className="relative order-1 min-h-150 md:min-h-screen">
-                {/* <img
-                    src={LoginPage}
+                <img
+                    src={LogoImage}
                     alt="login-image"
                     className="w-full h-auto rounded-xl"
-                    width={720}
-                    height={713}
+                    width={870}
+                    height={860}
                     loading="eager"
                     fetchpriority="high"
                     sizes="(max-width: 768px) 100vw, 720px"
-                /> */}
+                />
             </div>
 
             <div className="order-2 py-8">
                 <main className="max-w-125 mx-auto px-4 flex flex-col justify-center h-full">
                     <div className="h-fit border p-5 border-[#E2E8F0] rounded-xl shadow">
                         <div className="mb-6 text-center">
-                            {/* <div className="flex justify-center  mb-6">
-                                <img src={Logo} alt="logo" width={200} height={45} style={{ width: "200px", height: "45px" }} />
-                            </div> */}
+                            <div className="flex justify-center  mb-6">
+                                <img src={HeaderLogo} alt="logo" width={200} height={45} style={{ width: "200px", height: "45px" }} />
+                            </div>
                             <div className="flex justify-center mb-6">
-                                {/* <img
-                                    src={Logo}
+                                <img
+                                    src={HeaderLogo}
                                     alt="logo"
                                     width={200}
                                     height={42}
                                     style={{ width: "200px", height: "auto" }}
-                                /> */}
+                                />
                             </div>
 
                             <h2 className="font-sans text-[26px] font-semibold text-[#003C51] mb-2">
