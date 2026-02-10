@@ -4,6 +4,7 @@ import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { CalenderIcon, DownArrowIcon } from "../../assets/icon";
+import Button from "../button/button";
 
 export default function FilterHeader({ title, subtitle, dropdowns }) {
     const [state, setState] = useState([
@@ -186,17 +187,12 @@ export default function FilterHeader({ title, subtitle, dropdowns }) {
                                     rangeColors={["#087BB3"]}
                                 />
                                 <div className="flex justify-end mt-2">
-                                    <button
-                                        className="px-4 py-1 bg-[#087BB3] text-white rounded hover:bg-[#087BB3]"
-                                        onClick={() => setShowPicker(false)}
-                                    >
-                                        Apply
-                                    </button>
+                                    <Button className="px-2 py-1! bg-[#087BB3] text-white rounded hover:bg-[#087BB3]" text=" Apply" onClick={() => setShowPicker(false)}/>
                                 </div>
                             </div>
                         )}
                     </div>
-                    <button class="cursor-pointer px-3 py-2 text-sm text-[#1976D2] hover:bg-blue-50 rounded-lg whitespace-nowrap">Clear Filters</button>
+                    <Button className="px-1 text-sm text-[#1976D2] hover:bg-blue-50 whitespace-nowrap" text="Clear Filters"/>
                 </div>
             </div>
         </div>

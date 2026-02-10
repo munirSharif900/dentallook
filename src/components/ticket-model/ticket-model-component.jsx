@@ -84,6 +84,7 @@ export function Textarea({
 }
 
 import { useState } from "react";
+import Button from "../button/button";
 
 export function FileUpload({ label }) {
   const [file, setFile] = useState(null);

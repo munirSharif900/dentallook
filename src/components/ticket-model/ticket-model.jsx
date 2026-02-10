@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Pill, { Input, Textarea, FileUpload } from "./ticket-model-component.jsx";
+import Button from "../button/button.jsx";
 
 export default function Ticket_Modal({ open, onClose, onSuccess }) {
   if (!open) return null;
@@ -155,12 +156,8 @@ export default function Ticket_Modal({ open, onClose, onSuccess }) {
           </div>
 
           <div className="grid grid-cols-2 gap-3 pt-4">
-            <button type="button" onClick={onClose} className="border border-gray-300 px-4 py-2 rounded">
-              Cancel
-            </button>
-            <button type="submit" className="bg-[#087BB3] text-white px-4 py-2 rounded">
-              Submit
-            </button>
+            <Button type="button" onClick={onClose} className="border border-gray-300 px-2 rounded!"  text="Cancel"/>    
+            <Button type="submit" className="bg-[#087BB3] text-white px-2 rounded!" text="Submit"/>
           </div>
 
         </form>

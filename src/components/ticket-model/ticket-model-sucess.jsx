@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { TickMark } from "../../assets/images";
+import Button from "../button/button";
 
 export default function TicketSuccessModal({ open, onClose, onAnother }) {
     const navigate = useNavigate();
@@ -24,19 +25,8 @@ export default function TicketSuccessModal({ open, onClose, onAnother }) {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-4">
-                    <button
-                        onClick={() => navigate("/dashboard")}
-                        className=" border border-gray-300 py-2 rounded cursor-pointer"
-                    >
-                        Go to My Dashboard
-                    </button>
-
-                    <button
-                        onClick={onAnother}
-                        className="bg-[#087BB3] text-white py-2 rounded cursor-pointer"
-                    >
-                        Submit Another Ticket
-                    </button>
+                    <Button onClick={() => navigate("/dashboard")} className="border border-gray-300 rounded!" text="Go to My Dashboard"/>
+                    <Button onClick={onAnother} className="bg-[#087BB3] text-white rounded!" text="Submit Another Ticket"/>
                 </div>
             </div>
         </div>

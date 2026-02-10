@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HeaderLogo, Profile } from "../../../assets/images";
 import { DoubleArrowIcon, HeaderTroggleIcon, NotificationIcon, SearchIcon } from "../../../assets/icon";
+import Button from "../../button/button";
 
 
 export default function Header({ onMobileToggle }) {
@@ -10,10 +11,11 @@ export default function Header({ onMobileToggle }) {
         <header className="bg-white w-full z-99 py-3 md:py-5 px-3 border-b border-[#E2E8F0] md:px-4 flex  justify-between">
 
             <div className="flex items-center gap-4 md:gap-25">
-                <button
+                {/* <button
                     onClick={onMobileToggle}
                     className="md:hidden cursor-pointer"
-                ><HeaderTroggleIcon /></button>
+                ><HeaderTroggleIcon /></button> */}
+                <Button onClick={onMobileToggle} className="md:hidden cursor-pointer px-0! py-0!" icon={<HeaderTroggleIcon />}/>
                 <Link to={`/`}>
                     <img src={HeaderLogo} alt="logo" width={140} height={30} />
                 </Link>

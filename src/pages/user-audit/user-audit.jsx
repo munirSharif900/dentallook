@@ -30,7 +30,7 @@ const employees = [
     {
         id: "EMP-0192",
         name: "Maria Hart",
-       image: ProfileIcon,
+        image: ProfileIcon,
         role: "Regional Manager",
         region: "AB-North",
         clinic: "67th Street Dental",
@@ -52,7 +52,7 @@ const employees = [
     {
         id: "EMP-0173",
         name: "John Doe",
-       image: ProfileIcon,
+        image: ProfileIcon,
         role: "UI/UX Lead",
         region: "CN-West",
         clinic: "My Dental Home",
@@ -140,7 +140,7 @@ const employees = [
     {
         id: "EMP-0236",
         name: "Olivia Mason",
-       image: ProfileIcon,
+        image: ProfileIcon,
         role: "Regional Manager",
         region: "AB-North",
         clinic: "67th Street Dental",
@@ -162,7 +162,7 @@ const employees = [
     {
         id: "EMP-0196",
         name: "Maria Hart",
-       image: ProfileIcon,
+        image: ProfileIcon,
         role: "Regional Manager",
         region: "AB-North",
         clinic: "67th Street Dental",
@@ -309,7 +309,7 @@ export default function UserAudit() {
 
 
     return (
-        <div className="p-4 min-h-screen">
+        <div className="min-h-screen">
             <FilterHeader
                 title="Users Audit"
                 dropdowns={DROPDOWN_BUTTON}
@@ -333,7 +333,7 @@ export default function UserAudit() {
                     <h2 className="text-lg text-[#17181A] font-bold">Employee List</h2>
 
                     <div className="flex items-center max-w-56 shadow-xs  w-full gap-2 bg-[#F7F7F7] rounded-lg px-2.5 py-2">
-                       <span><SearchIcon /></span> 
+                        <span><SearchIcon /></span>
                         <input
                             type="text"
                             placeholder="Search employee"
@@ -382,14 +382,12 @@ export default function UserAudit() {
                                     </td>
                                     <td className="px-6 py-4 text-[#333]">{emp.id}</td>
 
-                                    <td className="px-6 py-4">
-                                        <div className="flex items-center gap-3">
-                                            <img
-                                                src={ProfileIcon}
-                                                className="w-8 h-8 rounded-full"
-                                            />
-                                            <span className="font-medium text-[#333]">{emp.name}</span>
-                                        </div>
+                                    <td className="flex items-center gap-3 px-6 py-4">
+                                        <img
+                                            src={ProfileIcon}
+                                            className="w-8 h-8 rounded-full"
+                                        />
+                                        <span className="font-medium text-[#333]">{emp.name}</span>
                                     </td>
 
                                     <td className="px-6 py-4 text-[#333]">{emp.role}</td>

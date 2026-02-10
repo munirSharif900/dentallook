@@ -84,13 +84,13 @@ export default function AgentView({ pageSize = 3, headding, description, avatar 
                     <tbody>
                         {current.map((row, i) => (
                             <tr key={i} className="border-b border-[#E5E6E6] last:border-none">
-                                <div className="flex items-center gap-2">
+                                <td className="flex items-center gap-2">
                                     <img
                                         src={ProfileIcon}
                                         className="w-8 h-8 rounded-full"
                                     />
-                                    <td className="py-4 font-medium text-gray-800">{row.provincee}</td>
-                                </div>
+                                    <span className="py-4 font-medium text-gray-800">{row.provincee}</span>
+                                </td>
                                 <td className="px-6 py-4 font-medium text-gray-800">{row.province}</td>
                                 <td className="px-9 py-4 ">{row.total}</td>
                                 <td className="px-6 py-4 text-center"><Badge color="blue" value={row.received} /></td>

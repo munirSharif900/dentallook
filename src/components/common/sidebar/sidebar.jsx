@@ -68,14 +68,20 @@ export default function Sidebar({
                         <li key={link.id} className="list-none pb-2">
                             <NavLink
                                 to={link.path}
+                                onClick={() => {
+                                    if (window.innerWidth < 768) {
+                                        onMobileClose();
+                                    }
+                                }}
                                 className={({ isActive }) =>
                                     `group flex items-center gap-3 px-4 py-3 rounded-lg transition-all
-                                 ${isActive
+                                      ${isActive
                                         ? "bg-[#087BB3] text-white"
                                         : "text-[#63716E] hover:bg-gray-200 hover:text-gray-900"
                                     }`
                                 }
                             >
+
                                 <link.Icon className="w-4 h-4 text-current shrink-0" />
 
                                 <span
@@ -84,7 +90,7 @@ export default function Sidebar({
                                          ${collapsed
                                             ? "opacity-0 w-0 overflow-hidden"
                                             : "opacity-100 w-auto"}
-                             `}
+                                        `}
                                 >
                                     {link.text}
                                 </span>
