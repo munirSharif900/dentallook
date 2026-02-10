@@ -77,8 +77,6 @@ export default function Login() {
                     width={870}
                     height={860}   
                     loading="eager"
-                    fetchpriority="high"
-                    sizes="(max-width: 768px) 100vw, 720px"
                 />
             </div>
 
@@ -122,7 +120,6 @@ export default function Login() {
                                     <p className="text-red-500 text-xs mt-1">
                                         {errors.email}
                                     </p>
-
                                 )}
                             </div>
 
